@@ -55,6 +55,8 @@
 </div>
     </header>
     <main>
+      
+
         <!-- Banner section -->
          <section class="flex justify-evenly items-center bg-sky-100 text-center">
 
@@ -77,14 +79,46 @@ generations.</p>
             </dev>
          </section>
 
-         <!-- Campaign section -->
-          <section class="mt-50">
-            <h2 class="font-bold text-[25px] text-gray-800 text-center mb-10">About the Campaign</h2>
-            <div class="flex items-start">
-              <div class="w-1/2">
-              <img class="w-[500px] mx-auto" src="assets/about.png" alt="">
+         <!-- JS function section -->
+          <section class="mt-20 mb-20">
+           
+            <div class="flex justify-evenly">
+              <h3 class="font-bold text-[20px] text-center">Categories</h3>
+            <h3 class="font-bold text-[25px] text-center">Choos your trees</h3>
+             <h3 class="font-bold text-[20px]">Your Cart</h3>
             </div>
-            <div class="w-1/2 items-start mt-40">
+            <div class="flex justify-evenly ">
+              
+              <!-- Left categori container -->
+            <div id="category-container" class="w-1/5">
+              
+            </div>
+            <!-- Tree card container -->
+            <div id="tree-container" class="w-1/2 grid grid-cols-1 lg:grid-cols-3">
+               <!-- Spinner -->
+       <div id="spinner" class="items-center justify-center bg-white z-50 hidden">
+    <div class="loading loading-dots loading-xl"></div>
+</div>
+              
+              
+              <img src="" class="rounded-xl h-40 w-full object-cover" alt="">
+            </div>
+            <!-- Right add to card container -->
+            <div id="add-card-container" class="w-1/5">
+             
+              <div id="cart-items"></div>
+            </div>
+            </div>
+          </section>
+
+         <!-- Campaign section -->
+          <section class="lg:mt-50 mt-10">
+            <h2 class="font-bold text-[25px] text-gray-800 text-center mb-10">About the Campaign</h2>
+            <div class="flex flex-col lg:flex-row items-start">
+              <div class="lg:w-1/2">
+              <img class="lg:w-[500px] mx-auto" src="assets/about.png" alt="">
+            </div>
+            <div class="lg:w-1/2 items-start mt-10 mb-10 lg:mt-40">
               <p class="mb-4 text-gray-700">Green Earth is a global tree plantation initiative dedicated to fighting <br> climate change. Since our start, we’ve planted over 500,000 trees <br> worldwide. By joining our campaign, you help restore forests, create <br> habitats for wildlife, and combat global warming.</p>
               <ul class="list-disc text-gray-700 ml-5">
                 <li class="mb-2">Restoration of natural habitats</li>
@@ -96,22 +130,22 @@ generations.</p>
           </section>
 
           <!-- Impact section -->
-           <section class="bg-[#CFF0DC] mt-[100px] p-2 h-[350px]">
+           <section class="bg-[#CFF0DC] lg:mt-[100px] mt-10 p-2 lg:h-[350px]">
             <h2 class="font-bold text-[25px] text-gray-800 text-center mt-10">Our Impact</h2>
-            <div class="mt-10 flex justify-evenly">
-              <button class="btn btn-soft btn-primary hover:bg-green-300 w-[400px] h-[150px] border-none bg-white rounded-lg">
+            <div class="mt-10 flex gap-2 flex-col lg:flex-row justify-evenly">
+              <button class="btn btn-soft btn-primary hover:bg-green-300 lg:w-[400px] w-[400px] lg:h-[150px] h-[100px] border-none bg-white rounded-lg">
                 <div>
                   <h3 class="font-semibold text-[20px] text-green-800">500k+</h3>
                 <p class="text-gray-500">Tree planted</p>
                 </div>
               </button>
-              <button class="btn btn-soft btn-primary hover:bg-green-300 w-[400px] h-[150px] border-none bg-white rounded-lg">
+              <button class="btn btn-soft btn-primary hover:bg-green-300 lg:w-[400px] w-[400px] lg:h-[150px] h-[100px] border-none bg-white rounded-lg">
                 <div>
                   <h3 class="font-semibold text-[20px] text-green-800">120+</h3>
                 <p class="text-gray-500">Communuties Involved</p>
                 </div>
               </button>
-              <button class="btn btn-soft btn-primary hover:bg-green-300 border-none w-[400px] h-[150px] bg-white rounded-lg">
+              <button class="btn btn-soft btn-primary hover:bg-green-300 border-none lg:w-[400px] w-[400px] lg:h-[150px] h-[100px] bg-white rounded-lg">
                 <div>
                   <h3 class="font-semibold text-[20px] text-green-800">30+</h3>
                 <p class="text-gray-500">Country Reached</p>
@@ -121,7 +155,7 @@ generations.</p>
            </section>
 
            <!-- Tree today section -->
-            <section class="bg-green-900 p-5 h-[400px]">
+            <section class="bg-green-900 p-5 h-[400px] mt-5 lg:mt-0">
               <h2 class="font-bold text-center text-white text-[22px]">Plant a tree today</h2>
 
               <div class=" p-5">

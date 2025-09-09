@@ -1,0 +1,12 @@
+1) What is the difference between var, let, and const?
+Ans: Var = Variable er old version, value change kora jay.
+Let = Let dara declare korle value change kora jay.
+Const = const dara declare korle value change koora jay na.
+
+2) What is the difference between map(), forEach(), and filter()?
+Ans: Map = Array er protita element ke loop kore new array return kore.
+forEach = protita element ke loop kore but kono kicu return kore na.
+filter = array er elemnt condition check kore array return kore
+3) What are arrow functions in ES6?
+4) How does destructuring assignment work in ES6?
+5) Explain template literals in ES6. How are they different from string concatenation?
