@@ -20,7 +20,6 @@ const showCategories = (list) => {
 
     category.querySelectorAll('button').forEach(b => b.classList.remove('bg-green-600', 'text-white'));
 
-   
     btn.classList.add('bg-green-600', 'text-white');
 
     const filtered = allPlants.filter(p => p.category === item.category_name);
@@ -67,7 +66,7 @@ const showPlants = (plants) => {
             <h2 onclick='getDetails(${p.id})' class='text-xl font-bold'>${p.name}</h2>
             <p>${p.description ? p.description.slice(0,50) : ''}...</p>
             <div class="flex justify-between">
-            <p class="border-2 border-sky-300 rounded-3xl lg:px-2 mt-2 mb-2 text-sky-500">${p.category}</p>
+            <p class="border-2 border-sky-300 rounded-3xl lg:px-2 px-1 mt-2 mb-2 text-sky-500">${p.category}</p>
             <p class="text-green-600 font-bold mt-2 mb-2"> ${p.price} $</p>
             </div>
             <button class='btn btn-success mt-2 rounded-3xl'>Add to cart</button>
@@ -149,7 +148,6 @@ const updateCart = () => {
         cartContainer.appendChild(div);
     });
 
-    
     const totalDiv = document.createElement('div');
     totalDiv.className = 'mt-2 font-bold';
     totalDiv.innerText = `Total: ${total} $`;
@@ -174,8 +172,6 @@ const showSpinner = () => {
 const hideSpinner = () => {
     document.getElementById('spinner').classList.add('hidden');
 }
-
-
 
 
 getCategories();
